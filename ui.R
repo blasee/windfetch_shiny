@@ -70,9 +70,9 @@ shinyUI(fluidPage(
         tabPanel("Summary",
                  tableOutput("summary")),
         tabPanel("Distances",
-                 dataTableOutput("distances"))
-        # tabPanel("Help",
-        #          includeMarkdown("README.md"))
+                 dataTableOutput("distances")),
+        tabPanel("Help",
+                 includeMarkdown("README.md"))
       )
     )
   )
