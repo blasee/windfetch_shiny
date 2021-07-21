@@ -293,6 +293,7 @@ shinyServer(function(input, output) {
             },
         content = function(file){
             fetch_obj = calc_fetch()$my_fetch_latlon
+            setwd(tempdir())
             dir.create("CSV", showWarnings = FALSE)
             
             if (file.exists("CSV/fetch.csv"))
