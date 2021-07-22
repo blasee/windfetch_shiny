@@ -76,7 +76,7 @@ fetch_df = data.frame(
 fetch_df
 
 # Create an sf object for the fetch locations
-fetch_sf = st_as_sf(fetch_df, coords = c("lon", "lat"), crs = "epsg:4326")
+fetch_sf = st_as_sf(fetch_df, coords = c("lon", "lat"), crs = 4326)
 fetch_sf
 ```
 
@@ -86,7 +86,7 @@ column in the data within the shapefile, then the web application will
 not return meaningful names.
 
 ``` r
-st_write(fetch_sf, "fetch_locations")
+st_write(fetch_sf, "fetch_locations", driver = "ESRI Shapefile")
 ```
 
 These files can now be uploaded to the web application.
