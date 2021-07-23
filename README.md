@@ -139,7 +139,7 @@ shiny::runApp("windfetch_shiny")
 ## Citation
 
 Please don’t forget to [cite
-**windfetch**](https://github.com/blasee/windfetch#citation) in
+**windfetch**](http://hdl.handle.net/102.100.100/421787?index=1) in
 publications.
 
 [1] This requires a (free) [registration to the LINZ Data
